@@ -1,0 +1,12 @@
+cat > .gitignore << 'EOF'
+# Compiled binaries and build artifacts
+a.out
+*.o
+*.obj
+*.exe
+*.out
+*.dSYM/
+build/
+# Common accidental binaries
+hello
+EOF
