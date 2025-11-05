@@ -4,7 +4,7 @@ int main(){
 
     //WRITE A FILE
 
-    FILE *pFile = fopen("/Users/sagar/Desktop/output.txt", "w");
+    FILE *pFile = fopen("output.txt", "w");
 
     char text[] = "HELLO HELLO HELLO\n ROCKIN' EVERYWHERE!";
 
