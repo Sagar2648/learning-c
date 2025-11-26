@@ -43,5 +43,18 @@ int main(){
 
     printf("\nYour Score is %d out of %d points\n", score, questionCount);
 
+    printf("\nYour Score is %d out of %d points\n", score, questionCount);
+
+FILE *fp = fopen("scores.txt", "a");
+if(fp == NULL){
+    printf("Error opening file to save score!\n");
+} else {
+    char playerName[50];
+    printf("\nEnter your name to save your score: ");
+    scanf(" %s", playerName); // read name with spaces
+    fprintf(fp, "Player: %s, Score: %d out of %d\n", playerName, score, questionCount);
+    fclose(fp);
+    printf("Score saved successfully!\n");
+}
     return 0;
 }
